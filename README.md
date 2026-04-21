@@ -1,6 +1,9 @@
 # NY Salary Scanner
 A library that synchronously scrapes and downloads salary data from [seethroughny.net](https://seethroughny.net/) in a csv format.
 
+## Installation
+    pip install ny-salary-scanner==0.0.1 
+
 ## Example
     from ny_salary_scanner import scraper, parser
 
