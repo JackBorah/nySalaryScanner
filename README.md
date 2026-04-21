@@ -23,7 +23,7 @@ A library that synchronously scrapes and downloads salary data from [seethroughn
             outputHTML = html_output
         )
 
-parser.parse(html_output) # the cwd will contain salaries.csv and output.html after running
+    parser.parse(html_output) # the cwd will contain salaries.csv and output.html after running
 
 ## Workflow
 Playwright opens chrome and searches using the provided parameters. Then, it will click "Load More Results" repeatedly until there is no additional data to load. This step is throttled to be respectful to the website. Now the HTML is saved and downloaded where it will be parsed by BeautifulSoup4 and saved as a CSV.
